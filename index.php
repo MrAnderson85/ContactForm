@@ -1,3 +1,17 @@
+<?php
+echo "<pre>";
+echo print_r($_POST);
+echo "/<pre>";
+$name = $POST['name'];
+$email = $_POST['emailAdress'];
+$to = "mranderson85@gmail.com";
+$body = "Hello, ";
+$body .= "From: ".$name. "\r\n";
+$body .= "email: ".$email. "\r\n";
+mail($to, "test email", $body);
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
