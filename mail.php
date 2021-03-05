@@ -11,6 +11,7 @@ $txt = "Name: ". $name . "\r\n Email: " . $email ;
 $headers = "From: noreply@testsite.com";
 
 if($email!=NULL)
-    mail($to,$subject,$to,$headers)
+    mail($to,$subject,$txt,$headers);
 
+echo "Thanks!!";
 ?>
